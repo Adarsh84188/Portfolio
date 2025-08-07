@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Adarsh Yadav</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #f1f5f9;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #0f172a;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    header h1 {
+      font-size: 1.8rem;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .about-img {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+    .about-img img {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .about-content {
+      flex: 2 1 500px;
+      padding: 20px;
+    }
+    .about-content h2 {
+      margin-bottom: 15px;
+      font-size: 2rem;
+      color: #1e293b;
+    }
+    .about-content p {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #0f172a;
+      color: #9ca3af;
+      margin-top: 40px;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+      }
+      .about-content {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About Me - Adarsh Yadav</h1>
+  </header>
+
+  <div class="container">
+    <section class="about-section">
+      <div class="about-img">
+        <img src="https://via.placeholder.com/300x300.png?text=Your+Photo" alt="Adarsh Yadav">
+      </div>
+      <div class="about-content">
+        <h2>Hello, I'm Adarsh Yadav 👋</h2>
+        <p>I am a passionate Full Stack Developer with expertise in building web applications using React.js, Node.js, MongoDB, and Vue.js. I enjoy transforming ideas into fully functional and visually appealing digital experiences.</p>
+        <p>My journey in web development started with a curiosity for how websites work, and now it's a full-blown passion where I constantly strive to learn and implement new technologies.</p>
+        <p>Outside coding, I love exploring new tools, contributing to open-source projects, and continuously upgrading my skills to stay relevant in this fast-evolving tech world.</p>
+        <button onclick="showMessage()">Click to Know More</button>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Adarsh Yadav. All Rights Reserved.
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("Thank you for visiting my About page! Stay connected.");
+    }
+  </script>
+
+</body>
+</html>
